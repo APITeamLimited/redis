@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-redis/redis/v9/internal"
-	"github.com/go-redis/redis/v9/internal/pool"
-	"github.com/go-redis/redis/v9/internal/proto"
+	"github.com/APITeamLimited/redis/v9/internal"
+	"github.com/APITeamLimited/redis/v9/internal/pool"
+	"github.com/APITeamLimited/redis/v9/internal/proto"
 )
 
 // PubSub implements Pub/Sub commands as described in
@@ -155,9 +155,10 @@ func (c *PubSub) closeTheCn(reason error) error {
 	if c.cn == nil {
 		return nil
 	}
-	if !c.closed {
-		internal.Logger.Printf(c.getContext(), "redis: discarding bad PubSub connection: %s", reason)
-	}
+	// Couldn't figure out how to disable, so disabling
+	//if !c.closed {
+	//	internal.Logger.Printf(c.getContext(), "redis: discarding bad PubSub connection: %s", reason)
+	//}
 	err := c.closeConn(c.cn)
 	c.cn = nil
 	return err

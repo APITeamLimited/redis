@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
   - name: Discussions
-    url: https://github.com/go-redis/redis/discussions
+    url: https://github.com/APITeamLimited/redis/discussions
     about: Ask a question via GitHub Discussions

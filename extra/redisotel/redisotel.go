@@ -9,12 +9,12 @@ import (
 	semconv "go.opentelemetry.io/otel/semconv/v1.7.0"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/go-redis/redis/extra/rediscmd/v9"
-	"github.com/go-redis/redis/v9"
+	"github.com/APITeamLimited/redis/extra/rediscmd/v9"
+	"github.com/APITeamLimited/redis/v9"
 )
 
 const (
-	defaultTracerName = "github.com/go-redis/redis/extra/redisotel"
+	defaultTracerName = "github.com/APITeamLimited/redis/extra/redisotel"
 )
 
 type TracingHook struct {

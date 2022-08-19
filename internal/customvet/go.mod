@@ -1,4 +1,4 @@
-module github.com/go-redis/redis/internal/customvet
+module github.com/APITeamLimited/redis/internal/customvet
 
 go 1.17
 

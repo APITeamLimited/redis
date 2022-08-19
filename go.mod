@@ -1,4 +1,4 @@
-module github.com/go-redis/redis/v9
+module github.com/APITeamLimited/redis
 
 go 1.17
 

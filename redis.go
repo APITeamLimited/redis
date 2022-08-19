@@ -8,9 +8,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/go-redis/redis/v9/internal"
-	"github.com/go-redis/redis/v9/internal/pool"
-	"github.com/go-redis/redis/v9/internal/proto"
+	"github.com/APITeamLimited/redis/v9/internal"
+	"github.com/APITeamLimited/redis/v9/internal/pool"
+	"github.com/APITeamLimited/redis/v9/internal/proto"
 )
 
 // Nil reply returned by Redis when key does not exist.
